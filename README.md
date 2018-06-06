@@ -18,12 +18,14 @@ Once you are live, we require you to setup the following Instant Payment Notific
 ## Gradle
 compile 'com.pesapal.android:pesapalandroid:1.0.5'
 ## Maven
+```
 <dependency>
   <groupId>com.pesapal.android</groupId>
   <artifactId>pesapalandroid</artifactId>
   <version>1.0.5</version>
   <type>pom</type>
 </dependency>
+```
 
 # How it works
 - Install the plugin
