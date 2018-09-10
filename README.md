@@ -62,7 +62,7 @@ ComponentName cn = new ComponentName(this, "com.pesapal.pesapalandroid.PesapalSe
 
 Intent intent = new Intent().setComponent(cn);
 
-intent.putExtra("pkg","com.pesapal");
+intent.putExtra("pkg","your package name");
 
 startActivityForResult(intent,SETTINGS_ACTIVITY_REQUEST_CODE);
 ```
