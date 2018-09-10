@@ -78,7 +78,7 @@ Payment payment = new Payment();
 
 payment.setAmount(100.00);
 
-payment.setAccount("123456789");
+payment.setAccount("just extra info, e.g dstv account number, order id");
 
 payment.setDescription("test_payment");
 
