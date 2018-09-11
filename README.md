@@ -34,8 +34,7 @@ compile 'com.pesapal.android:pesapalandroid:1.0.5'
   ```
   <meta-data android:name="string"
            android:resource="com.pesapal.pesapalandroid.MERCHANT_ID"
-           android:value="ID Returned Above" />
- ```
+           android:value="ID Returned Above" />```
 - On Unsuccessful setup, the settings activity returns to the calling activity with the error message that you can access as `String error = data.getStringExtra("error");`
 - To make a payment, pass a payments object to the Plugins Payments Activity. See example below. 
 - On successful payment, The plugin returns a payments string to the calling activity, that you should capture on `onActivityResult`. The payment string is comma separated that contains a unique payment ID, method of payment, `e.g MPESA`,status of the payment `e.g COMPLETED, PENDING, FAILED`, and amount processed 
