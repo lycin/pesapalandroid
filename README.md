@@ -12,7 +12,7 @@ On Pesapal Live, you email these information from the dashboard when you are log
 
 Once you are live, we require you to setup the following Instant Payment Notification URL under `IPN Settings in your Merchant dashboard`
 
-> http://sdk.pesapal.com/ipn
+> https://sdk.pesapal.com/ipn
 
 # Installation
 ## Gradle
