@@ -16,13 +16,13 @@ Once you are live, we require you to setup the following Instant Payment Notific
 
 # Installation
 ## Gradle
-compile 'com.pesapal.android:pesapalandroid:1.0.7'
+compile 'com.pesapal.android:pesapalandroid:1.0.8'
 ## Maven
 ```
 <dependency>
   <groupId>com.pesapal.android</groupId>
   <artifactId>pesapalandroid</artifactId>
-  <version>1.0.7</version>
+  <version>1.0.8</version>
   <type>pom</type>
 </dependency>
 
@@ -78,23 +78,15 @@ startActivityForResult(intent,SETTINGS_ACTIVITY_REQUEST_CODE);
 ```
 
 Payment payment = new Payment();
-
+payment.setReference("p0909788786t9");//transaction unique reference
 payment.setAmount(100.00);
-
 payment.setAccount("just extra info, e.g dstv account number, order id");
-
 payment.setDescription("test_payment");
-
 payment.setEmail("xxx@xxx.com");
-
 payment.setCurrency("KES");
-
 payment.setFirstName("Jane");
-
 payment.setLastName("Doe");
-
 payment.setPhoneNumber("07XXXXXXXX");
-
 ComponentName cn = new ComponentName(this, "com.pesapal.pesapalandroid.PesapalPayActivity");
 
 Intent intent = new Intent().setComponent(cn);
